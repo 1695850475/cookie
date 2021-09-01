@@ -1,0 +1,529 @@
+      #main{
+         width:100%;
+      }
+      
+
+      /*秒杀开始*/
+      #main>.seckill{
+         padding-top:20px;
+      }
+
+      #main .con-box{
+         width:1200px;
+         margin:0 auto;
+      }
+
+      #time{
+         float:left;
+         display: block;
+         position: relative;
+         width:230px;
+         height:166px;
+         padding-top:174px;
+         background: url("../img/main/seckill-bg.png") no-repeat;
+         background-size:100% 100%;
+      }
+
+      #time>img{
+         position: absolute;
+         left:50%;
+      }
+
+      #time>.lxms{
+         top:44px;
+         width:120px;
+         height:27px;
+         margin-left:-60px;
+      }
+
+      #time>.sd{
+         top:96px;
+         width:28px;
+         height:60px;
+         margin-left:-14px;
+      }
+
+      #time>p{
+         text-align: center;
+         margin:0 40px 18px;
+         color:white;
+         font-size: 16px;
+         line-height: 20px;
+      }
+
+      #time>p>b{
+         font-size:20px;
+      }
+      #time>p>span{
+         font-weight:bold;
+      }
+      #time>dl{
+         position: absolute;
+         left:50%;
+         margin-left:-57px;
+      }
+      #time>dl>dd{
+         color:black;
+         width:12px;
+         height:30px;
+         font-size:16px;
+         line-height: 30px;
+         text-align: center;
+         float:left;
+         
+      }
+      #time>dl>dd:nth-child(2n-1){
+         border-radius: 4px;
+         width:30px;
+         color:white;
+         background: black;
+      }
+
+
+      .seckill-con{
+         height:340px;
+         background: white;
+         float:left;
+         width:918px;
+      }
+      .seckill-con>dt{
+         position: relative;
+         padding-top:20px;
+         margin-bottom:17px;
+         display: block;
+         height:52px;
+      }
+
+      .seckill-con>dt:after{
+         position: absolute;
+         bottom: 0;
+         content:"";
+         display: block;
+         width:100%;
+         height:1px;
+         background:rgb(232, 232, 232); 
+      }
+
+      .seckill-con>dt>a{
+         margin-left:22px;
+         text-align: center;
+         display: block;
+         line-height: 26px;
+         width:164px;
+         height:26px;
+         border-radius: 13px;
+         color: #fff;
+         font-size:14px;
+         font-weight:bold;
+         background: linear-gradient(37deg,#ec1111 1%,#ff8200 99%);
+      }
+
+      .seckill-con>dd{
+         float:left;
+         padding-left:23px;
+         width:206px;
+      }
+      .seckill-con>dd>a{
+         display: block;
+         padding-right:10px;
+         border-right:1px solid #e8e8e8;
+      }
+
+      .seckill-con>dd>a>img{
+         width:160px;
+         height:160px;
+         margin:0 16px;
+      }
+
+      .seckill-con .name{
+         margin-top:9px;
+         display: block;
+         line-height: 20px;
+         font-size:15px;
+         height:20px;
+         overflow: hidden;
+         text-overflow: ellipsis;
+         word-break: break-all;
+         white-space: nowrap;
+      }
+
+      .seckill-con .discount{
+         margin-top:4px;
+         height:18px;
+         width:100%;
+      }
+
+      .seckill-con .discount>span{
+         float:left;
+         line-height: 16px;
+         font-size:12px;
+         background: #ffe7e4;
+         height: 16px;
+         line-height: 16px;
+         border: 1px solid #ffe7e4;
+         border-radius: 2px;
+         color: #ff2f2f;
+      }
+
+      .seckill-con .discount>span>i{
+          float:left;
+          width: 13px;
+          height: 13px;
+          background-image: url("../img/main/zhe.png");
+          background-size: 13px 13px;
+          margin-right:3px;
+          margin-top: 1.5px;
+          margin-left: 2px;
+      }
+
+      .seckill-con .price{
+
+          margin-top:7px;
+      }
+
+      .seckill-con .price>b{
+         font-size:16px;
+         margin-right:11px;
+         color:#e72d21;
+      }
+
+      .seckill-con .price>s{
+         font-size:14px;
+         color:#858585;
+      }
+      
+
+      .con-box>.gdms{
+         float:left;
+         position: relative;
+         width:49px;
+         height:340px;
+         background-image: linear-gradient(37deg,#ec1111 1%,#ff8200 99%); 
+      }
+
+      .con-box>.gdms>a{
+          position: absolute;
+          top: 50%;
+          left: 50%;
+          margin:-53px 0 0 -9px;
+          width: 18px;
+          height: 106px;
+          font-size: 14px;
+          color: #fff;
+          text-align: center;
+      }
+
+      .con-box>.gdms>a>i{
+          display: inline-block;
+          width: 18px;
+          height: 18px;
+          background-image: url(../img/main/gdms.png);
+          background-size: 18px 18px;
+          margin-top: 11px;
+      }
+
+      /*秒杀结束*/
+
+/*楼层开始*/
+.floor{
+   width:100%;
+   padding:20px 0;
+}
+
+.floor>.con-box{
+   width:1200px;
+   margin:0 auto;
+   overflow: hidden;
+}
+
+.floor>.con-box>.Top{
+   height:35px;
+   line-height: 35px;
+   margin-bottom:16px;
+}
+
+.floor>.con-box>.Top>p{
+   float:left;
+   font-size: 26px;
+   font-weight:bold;
+}
+
+.floor>.con-box>.Top>.tle{
+   float:right;
+}
+
+.floor>.con-box>.Top>.tle>a{
+   float:left;
+   font-size:14px;
+   line-height: 45px;
+   margin-right:16px;
+}
+
+.floor>.con-box>.Top>.tle>a:hover{
+   text-decoration: underline;
+   color: #e1140a;
+}
+
+.floor>.con-box>.Top>.tle>.more>img{
+   display: inline-block;
+   vertical-align: middle;
+   padding-bottom:5px;
+   width:18px;
+   height:18px;
+}
+
+.floor>.con-box>.Top>.tle>.more>.hover{
+   display: none;
+}
+.floor>.con-box>.Top>.tle>.more:hover img{
+   display: none;
+}
+
+.floor>.con-box>.Top>.tle>.more:hover .hover{
+   display: inline-block;
+}
+
+.floor>.con-box>.con{
+   width:1210px;
+}
+
+.floor>.con-box>.con>dt{
+   margin-right:12px;
+   position: relative;
+   display: block;
+   float:left;
+   width:230px;
+   height:542px;
+}
+
+.floor>.con-box>.con>dt>a{
+   position: absolute;
+   z-index: 1;
+   width:100%;
+   height:100%;
+   display: none;
+   background: rgba(255,255,255,.2);
+}
+
+.floor>.con-box>.con>dt>img{
+   width:100%;
+   height:100%;
+}
+
+.floor>.con-box>.con>dt:hover a{
+   display: block;
+}
+
+.con-box>.con>dd{
+   margin-right:12px;
+   margin-bottom:12px;
+   position: relative;
+   background: white;
+   padding:0 15px;
+   width:200px;
+   height:265px;
+   float:left;
+}
+
+.con-box>.con>dd:hover{
+   box-shadow: 0 5px 15px rgb(0 0 0 / 20%);
+    transition: box-shadow .3s linear;
+}
+
+.con-box>.teli>dt:hover{
+    box-shadow: 0 15px 30px rgb(0 0 0 / 10%);
+    transition: all .2s linear;
+    transform: translate3d(0,-2px,0);
+}
+
+.con-box>.teli>dd:hover{
+    box-shadow: 0 15px 30px rgb(0 0 0 / 10%);
+    transition: all .2s linear;
+    transform: translate3d(0,-2px,0);
+}
+
+.con-box>.con>dd>a{
+   position: relative;
+}
+
+.con-box>.con>dd>a>img{
+   width:160px;
+   height:160px;
+   margin:5px auto;
+}
+
+.con-box>.con>dd>a>i{
+   background: rgba(255,255,255,.2);
+   width:100%;
+   height:100%;
+   position: absolute;
+   display: none;
+}
+
+.con-box>.con>dd>a:hover i{
+   display: block;
+}
+
+.con-box>.con>dd>b,.con-box>.con>dd>p{
+   display: block;
+   overflow: hidden;
+   text-overflow: ellipsis;
+   word-break: break-all;
+   white-space: nowrap;
+}
+
+.con-box>.con>dd>b{
+   margin:5px 15px 4px;
+}
+
+.con-box>.con>dd>p{
+   font-size: 12px;
+   height:14px;
+   margin-bottom:10px;
+   padding:0 25px;
+   text-align: center;
+}
+
+.con-box>.con>dd>p>a{
+   text-align: center;
+   color:#858585;
+}
+
+.con-box>.con>dd>a{
+   display: block;
+   font-size: 16px;
+   color:#e2231a;
+   text-align: center;
+}
+
+.con-box>.con>dd>a>span{
+   font-weight: 400;
+}
+
+.con-box>.con .mark{
+   position: absolute;
+   top:2px;
+   right:2px;
+   width:37px;
+   height:20px;
+   line-height: 20px;
+   text-align: center;
+   color:white;
+   font-size: 12px;
+}
+
+.con-box>.con>.min{
+   width:194px;
+   padding:0 18px;
+   height:128px;
+}
+
+.con-box>.con>.min>a{
+   margin:0;
+   float:right;
+}
+
+.con-box>.con>.min>a>img{
+   margin:16px 0;
+   width:95px;
+   height:95px;
+}
+
+.con-box>.con>.min>b{
+   line-height: 19px;
+   text-overflow:clip;
+   word-break: normal;
+   white-space: normal;
+   margin:0;
+   width:95px;
+   height:37px;
+   font-size: 13px;
+   margin-top:33px;
+}
+.con-box>.con>.min>b>a{
+   display: block;
+}
+.con-box>.con>.min>p{
+   display: none;
+}
+
+.con-box>.con>.min>.price{
+   text-align: left;
+   width:95px;
+   margin-top:7px;
+}
+
+
+.floor-model{
+    display: none;
+    position: fixed;
+    left: 50%;
+    margin-left: -650px;
+    z-index: 99;
+    width: 40px;
+    top: 50%;
+    margin-top: -166px;
+    text-align: center;
+}
+
+.floor-model>dl>dd{
+   line-height: 30px;
+   font-size:12px;
+   text-align: center;
+   position: relative;
+   height:30px;
+   padding-bottom:10px;
+}
+
+.floor-model>dl>dd>span{
+   width:40px;
+   height:30px;
+   display: block;
+}
+
+.floor-model>dl>dd:first-child span{
+   background: url("../img/lxms.png") no-repeat 10px 0px;
+   background-size:20px 20px ;
+}
+
+.floor-model>dl>dd:after{
+   content:"";
+   width:10px;
+   height:1px;
+   background: #e5e5e5;
+   position: absolute;
+   left:0;
+   bottom:0;
+   margin:4.5px 15px;
+}
+
+.floor-model>dl>dd:last-child:after{
+   display: none;
+}
+
+.floor-model>dl>dd>a{
+  cursor:pointer;
+   line-height: 15px;
+   position: absolute;
+   width:40px;
+   height:30px;
+   display: none;
+   z-index: 1;
+}
+.floor-model>dl>dd:hover a{
+   display: block;
+}
+.floor-model>dl>dd:hover span{
+   display: none;
+   background: none;
+}
+
+.floor-model>dl>dd>.ona{
+  display:block;
+  color:#4ac0e0;
+
+}
+
+.floor-model>dl>dd>.onspan{
+  display: none;
+}

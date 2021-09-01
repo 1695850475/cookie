@@ -1,0 +1,268 @@
+
+#banner{
+	margin:0 auto;
+	width:1519px;
+	position: relative;
+	background: white;
+}
+/*轮播图部分*/
+#slideshow-box{
+	position: relative;
+	height:470px;
+	width:1519px;
+	margin:0 auto;
+	overflow: hidden;
+}
+
+.slideshow{
+	position: absolute;
+	top:0;
+	left:0;
+	width:1100%;
+	height:470px;
+}
+
+.slideshow>li{
+   float：left;
+   position: relative;
+   float:left;
+   width:1519px;
+   height:470px;
+   overflow: hidden;
+}
+
+.slideshow>li>a{
+	position: absolute;
+	left:50%;
+	top:50%;
+	margin-top:-235px;
+	margin-left:-960px;
+}
+
+
+.prev,.next{
+	cursor:pointer;
+	display: none;
+	border:none;
+    position: absolute;
+    top:50%;
+    width:27px;
+    height:44px;
+    margin-top:-22px;
+    z-index: 1;
+}
+
+#slideshow-box>.prev{
+    left:10px;
+    background: url("../img/banner/prev.png");
+    background-size:27px 44px ;
+}
+
+#slideshow-box>.next{
+	right:10px;
+	background: url("../img/banner/next.png");
+	background-size:27px 44px ;
+}
+
+#slideshow-box>.yd{
+  position: absolute;
+  bottom:30px ;
+  left:50%;
+  margin-left:-90px;
+  z-index: 1;
+}
+
+#slideshow-box>.yd>dd{
+	cursor: pointer;
+	float:left;
+	width:8px;
+	height:8px;
+	border-radius: 4px;
+	margin:6px 5px;
+	background: rgba(0,0,0,.1);
+}
+#slideshow-box>.yd>dd:first-child{
+	background: rgba(0,122,255);
+}
+/*轮播图结束*/
+
+/*二级菜单开始*/
+
+#banner>.erji{
+	z-index: 1;
+	position: absolute;
+	top:33px ;
+	left:160px;
+	width:230px;
+	border:1px solid #e6e6e6;
+	border-right:none;
+	border-bottom:none;
+	background: rgba(255,255,255,0.85)
+}
+
+
+#banner>.erji>ul>li{
+	height:57.5px;
+}
+
+#banner>.erji>ul>li:hover{
+    background:#f7f7f7;
+}
+
+#banner>.erji>ul>li>a{
+	color: #494949;
+    font-weight: 600;
+	display: block;
+	position: relative;
+	width:184px;
+	height:25.5px;
+	padding:16px 15px 15px 30px;
+	border:1px solid #e6e6e6;
+	border-left:none;
+	border-top:none;
+}
+#banner>.erji>ul>li>a>i{
+	position: absolute;
+	width:6px ;
+	height:9px;
+	top:24px;
+	right:19px;
+    background: url("../img/icon.png") -84px -36px;
+}
+
+#banner>.erji>ul>li>a:hover i{
+	background-position: -73px -36px;
+}
+
+#banner>.erji>ul>li:hover .erji-con{
+	display: block;
+}
+
+.erji .erji-con{
+	height:362px;
+	display: none;
+	z-index: 2;
+	width: 964px;
+    background: #f7f7f7;
+    position: absolute;
+    left: 230px;
+    top: -1px;
+    border-right: 1px solid #e6e6e6;
+    border-top: 1px solid #e6e6e6;
+    border-bottom: 1px solid #e6e6e6;
+    padding: 20px 22px 20px 22px;
+}
+
+.erji .first{
+	height:470px;
+}
+
+.erji .erji-con>dl{
+
+	margin-bottom:20px;
+	width:575px;
+	position: relative;
+	float:left;
+	padding-left:96px;
+	padding-bottom:5px;
+}
+
+.erji .erji-con>dl a:hover{
+    color:red;
+}
+
+.erji .erji-con>dl>dt{
+	text-align: right;
+	line-height: 20px;
+	font-size: 13px;
+	width:76px;
+	padding-right:20px;
+    position: absolute;
+    font-weight: 600;
+    top:0;
+    left:0;
+    background: url("../img/banner/erji-tl.png") 100% 50% no-repeat;
+}
+
+.erji .erji-con>dl>dd{
+	height:20px;
+	float:left;
+}
+
+.erji .erji-con>dl>dd>a{
+	display: block;
+	vertical-align: middle;
+    padding:0 12px;
+	display: inline-block;
+	border-left:1px solid #e5e5e5;;
+	font-size: 12px;
+	color: #494949;
+    font-weight: 600;
+
+}
+
+.erji .erji-con>div{
+	position: absolute;
+	top:20px;
+	right:22px;
+}
+
+.erji .erji-con>div>a>img{
+	margin-bottom:8px;
+}
+
+/*二级菜单结束*/
+
+/*广告栏下部分*/
+.con-box{
+
+}
+
+.con-box>li{
+   float:left;
+   width:108px;
+   height:95px;
+       
+}
+
+.con-box>li:hover{
+	transition: all .5s;
+    box-shadow: 0 0 8px 0 rgb(200 200 200 / 50%);
+    transform: translate3d(0,-2px,0);
+}
+
+.con-box>li>a{
+	text-align: center;
+	display: block;
+	height:48px;
+	margin:23px auto;
+}
+
+.con-box>li>a>img{
+	display: block;
+	width:30px;
+	height:30px;
+    margin:0 auto;
+}
+
+.con-box>li>a>.hover{
+	display: none;
+}
+
+.con-box>li:hover img{
+	display: none;
+}
+
+.con-box>li:hover .hover{
+	display: block;
+}
+
+.con-box>li>a>span{
+	font-size: 13px;
+	line-height: 16px;
+}
+
+/*广告栏下部分结束*/
+
+
+

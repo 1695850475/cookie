@@ -1,0 +1,1134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>嘚嘚</title>
+   <link rel="stylesheet" href="css/reset.css" type="text/css"/>
+   <link rel="stylesheet" href="css/nav-logo.css" type="text/css"/>
+   <link rel="stylesheet" href="css/sidebar.css" type="text/css"/>
+   <link rel="stylesheet" href="css/login.css" type="text/css"/>
+   <link rel="stylesheet" href="css/footer.css" type="text/css"/>
+<style>
+   body{
+    background: white;
+   }
+   #pointto{
+    width: 100%;
+    height: 35px;
+    line-height: 35px;
+    border-bottom: 1px solid #DADADA;
+    background: white;
+   }
+   #pointto .con{
+    width: 1200px;
+    margin: 0 auto;
+    font-size: 12px;
+    color: #535353;
+    overflow: hidden;
+   }
+   #pointto .con a:hover{
+    color:red;
+   }
+   #detail-img,.detail-img{
+    width:100%;
+    max-width: 1920px;
+    margin:auto;
+   }
+   #detail-img>div,.detail-img{
+    margin:0 auto;
+    font-size: 0;
+    max-width: 1920px;
+    width:100%;
+    position: relative;
+    overflow: hidden;
+    height:100%;
+    text-align: center;
+   }
+   #detail-img img,.detail-img img{
+      display: inline-block;
+   }
+
+   .gtcs{
+    float:right;
+    width:63px;
+    padding-left:36px;
+    height:24px;
+    background: url("img/details/gtcs.png");
+    background-size:100%;
+    line-height:24px;
+    margin:5px 0;
+    color:white;
+
+   }
+
+   .details-L{
+      float:left;
+      width:520px;
+   }
+   .details-R{
+      float:right;
+      padding-top:35px;
+      width:642px;
+   }
+   .ISshow{
+      position: relative;
+      width:520px;
+      height:520px;
+   }
+   .ISshow>img{
+    width:520px;
+    height:520px;
+   }
+
+   .ISshow>.zz{
+    display: none;
+    position: absolute;
+    top:0;
+    left:0;
+    width:200px;
+    height:200px;
+    background: rgba(255,255,255,.5);
+    z-index:1;
+   }
+
+   .big{
+      display: none;
+      position: absolute;
+      top:0;
+      left:520px;
+      width:518px;
+      height:518px;
+      border:1px solid black;
+      overflow: hidden;
+      z-index: 20;
+   }
+
+   .big>img{
+    position: absolute;
+
+   }
+
+   .show{
+    margin-top:20px;
+   }
+
+   .show>a{
+    display: block;
+    width:24px;
+    height:86px;
+    text-align: center;
+    line-height: 86px;
+    color:#A5A5A5;
+    float:left;
+    font-size: 22px;
+    cursor: pointer;
+   }
+   .show>.con{
+    position: relative;
+    height:88px;
+    width:470px;
+    float:left;
+    overflow: hidden;
+   }
+
+   .show>.con>dl{
+    position: absolute;
+    width:200%;
+    overflow: hidden;
+   }
+
+   .show>.con>dl>dd{
+      width:84px;
+      height:84px;
+      border:1px solid #dcdcdc;
+      margin-right:10px;
+      float:left;
+   }
+   .show>.con>dl>.on{
+    border-color:#e2231a;
+   }
+   
+   .show>.con>dl>dd>img{
+    width:84px;
+    height:84px;
+   }
+
+
+   .good_action>dl{
+      float:right;
+   }
+
+   .good_action>dl>dd{
+    float:left;
+    margin-right:10px;
+   }
+
+   .good_action>dl>dd>i{
+      float:left;
+      margin-top:10px;
+      margin-right:5px;
+   }
+   .good_action>dl>dd:nth-child(1) i{
+      width:18px;
+      height:11px;
+      background: url("img/details/PK.png");
+       background-size:100%;
+   }
+   .good_action>dl>dd:nth-child(2) i{
+      width:10px;
+      height:10px;
+      background: url("img/details/small-icons.png") -39px -43px;
+   }
+   .good_action>dl>dd:nth-child(3) i{
+      width:12px;
+      height:12px;
+      margin-top:8px;
+      background: url("img/details/small-icons.png") -55px -42px;
+   }
+   .good_action{
+    margin-top:5px;
+    height:30px;
+    line-height: 30px;
+    font-size: 12px;
+   }
+   .good_action>span{
+    color: #A5A5A5;
+   }
+   .name{
+      line-height: 30px;
+      font-size: 22px;
+      font-weight: 400;
+   }
+   .carry{
+        color: #A2A2A2;
+        font-size: 14px;
+        margin-top: 8px;
+        line-height: 22px;
+        word-break: break-all;
+        margin-bottom: 20px;
+   }
+   .pricce-area{
+    max-height: 121px;
+    background: #F9F9F9;
+    border: 1px solid #F0F0F0;
+   }
+   .pricce-area span{
+    font-size: 12px;
+   }
+   .price{
+    position: relative;
+    height: 38px;
+    margin-top: 9px;
+    margin-bottom: 9px;
+   }
+
+   .evaluate_num{
+    position: absolute;
+    right: 0;
+    height: 35px;
+    border-left: 1px solid #E0E0E0;
+    top: 2px;
+    padding: 0 22px;
+    font-size: 12px;
+   }
+
+   .evaluate_num>p{
+    color: #A5A5A5;
+   }
+
+   .evaluate_num>a:hover{
+      color:red;
+   }
+
+   .price>span{
+    line-height: 42px;
+    font-size: 12px;
+    margin-left:15px;
+    margin-right:35px;
+    color: #E1140A;
+   }
+
+   .price>b{
+    font-size: 28px;
+    color: #E1140A;
+    }
+    
+    .activity{
+      max-height: 65px;
+      margin-top:5px;
+      position: relative;
+      background: #F9F9F9;
+      z-index: 10;
+      overflow: hidden;
+    }
+    .activity>span{
+      margin-left:15px;
+    }
+
+    .activity>ol{
+      float:right;
+      margin-right:95px;
+      width:450px;
+    }
+
+    .activity>ol>li{
+      float: left;
+      margin-bottom:16px;
+    }
+    .activity:hover{
+      max-height: 1000px;
+    }
+
+    .activity:hover li>span{
+       color:red;
+       display: inline;
+       font-size:14px; 
+    }
+
+    .activity:hover li{
+      width:100%;
+    }
+
+    .activity>ol>li>span{
+      display: none;
+      line-height: 18px;
+    }
+    .activity>ol>li:first-child{
+      width:100%;
+    }
+
+    .activity>ol>li:first-child span{
+
+      display: inline;
+    }
+
+    .activity>ol>li>i{
+      font-style: normal;
+      font-size: 12px;
+      color: #df3033;
+      border: 1px solid #df3033;
+      padding: 0 3px;
+      margin-right: 12px;
+      display: inline-block;
+      line-height: 16px;
+    }
+    .activity>ol>li>i.none{
+      display: none;
+    }
+    .value-added>p>span{
+       display: inline-block;
+    background-color: #96cb27;
+    border-radius: 12px;
+    line-height: 22px;
+    width: 86px;
+    margin: 0 10px;
+    text-align: center;
+    color:white;
+    }
+
+    .value-added>p>span>img{
+      display: inline-block;
+      vertical-align: middle;
+      margin:0 5px 0 -5px;
+    }
+
+    .serve{
+       width:622px;
+       padding-left:20px;
+       font-size: 12px;
+    }
+    .serve>dl,.value-added{
+      position: relative;
+      padding-left:78px;
+      float:left;
+      width:544px;
+      margin-top:15px;
+    }
+    .buy_num{
+      width:544px;
+      margin-top:15px;
+    }
+    .buy_num>span{
+      top:0;
+      left:0;
+      width:58px;
+      display: block;
+      float:left;
+      height:100%;
+      margin-right:20px;
+      line-height: 25px;
+      font-size: 12px;
+    }
+
+    .buy_num{
+      margin-left:20px;
+    }
+    .buy_num>.num{
+      overflow: hidden;
+      width:92px;
+      border:1px solid #DADADA;
+    }
+
+    .buy_num>.num>button{
+      float:left;
+      width:20px;
+      height:24px;
+      border:none;
+      background: white;
+      font-size: 18px;
+    }
+    .buy_num>.num>input{
+      float:left;
+      border:1px solid #DADADA;
+      width:50px;
+      height:20px;
+      border-top:none;
+      border-bottom:none;
+      text-align:center;
+      line-height: 20px;
+    }
+
+    .serve>dl>dt,.value-added>span{
+      position: absolute;
+      top:0;
+      left:0;
+      width:58px;
+      display: block;
+      float:left;
+      height:100%;
+      margin-right:20px;
+      line-height: 25px;
+      font-size: 12px;
+    }
+
+    .serve>dl>dd,.value-added>p{
+      float:left;
+    }
+
+    .system-configuration>dd{
+      width: 214px;
+      padding: 0px 21px;
+      height: 23px;
+      border: 1px solid #DADADA;
+      text-align: center;
+      line-height: 23px;
+      margin-right: 10px;
+      cursor: pointer;
+      margin-bottom: 10px;
+    }
+    .system-configuration>dd:hover{
+      border-color: #E1140A;
+      color: #E1140A;
+    }
+    .system-configuration>.on{
+      border-color: #E1140A;
+      color: #E1140A;
+    }
+
+    .customization{
+      line-height: 30px;
+    }
+
+    .customization>dd{
+      background: #EFEFEF;
+    border: 1px solid #DADADA;
+    cursor: pointer;
+    margin-right: 10px;
+    color: #434242;
+    letter-spacing: 0.7px;
+    width: 169px;
+    text-align: center;
+    }
+
+    .repair>dd,.installment>dd{
+      position: relative;
+      width: 258px;
+      height: 25px;
+      background: #FFFFFF;
+      border: 1px solid #DADADA;
+      margin-right:10px;
+      margin-bottom:11px;
+      font-size: 12px;
+      color: #434242;
+      line-height: 23px;
+      text-indent: 9px;
+    }
+    .site>dd{
+      padding-right:30px;
+      position: relative;
+      background: #fff;
+      border: 1px solid #DADADA;
+      height: 28px;
+      font-family: "PingFangSC-Regular";
+      font-size: 12px;
+      color: #434242;
+      line-height: 30px;
+    }
+    .site>dd>span{
+      margin-left:5px;
+    }
+
+    .installment>dd{
+      cursor:pointer;
+      width:224px;
+    }
+
+    .repair>dd>p{
+      float:left;
+      width:175px;
+    }
+    .repair>dd:hover>i,.installment>dd:hover>i,.site>dd:hover>i{
+       background-position: -28px 0;
+    }
+
+    .repair>dd>i,.installment>dd>i,.site>dd>i{
+      position: absolute;
+      top:4px;
+      right:5px;
+      width:15px;
+      height:15px;
+      background: url("img/details/arrow-group.png") -47px 0px ;
+    }
+    .site>dd>i{
+      top:7px;
+    }
+    .repair>dd:hover{
+      height:36px;
+      margin-bottom:0;
+    }
+
+    .repair>.on,.installment>.on{
+      border-color: #E1140A;
+    }
+
+    .repair>dd:hover ul{
+      display: block;
+    }
+
+    .repair>dd>ul{
+      padding-top:10px;
+      display: none;
+      background: white;
+      position: absolute;
+      top:100%;
+      margin-top:-1px;
+      left:-1px;
+      width:390px;
+      border: 1px solid #DADADA;
+      z-index: 5;
+    }
+    .repair>dd>ul>li>label>b>i{
+      font-style:normal;
+      font-weight: normal;
+    }
+    .repair>dd>ul>li>label>b{
+      margin:5px;
+    }
+    .repair>dd>ul>li>label>input{
+      vertical-align: middle;
+    }
+    .repair>dd>ul>li>a{
+      text-decoration: underline;
+      color:#A5A5A5;
+    }
+    .repair>dd>ul>li>a:hover{
+      color:#E1140A;
+    }
+
+    .repair>dd>ul>li{
+      line-height: 16px;
+      margin-bottom:10px;
+    }
+    .repair>dd>ul>li:hover{
+      cursor:pointer;
+      color:#E1140A;
+    }
+
+    .repair>dd>ul:after{
+      content:"";
+      display: block;
+      width:258px;
+      height:5px;
+      position: absolute;
+      top:-3px;
+      background: white;
+    }
+
+    .installment{
+      /*display: none;*/
+    }
+
+    .installment>dd>img{
+      display: inline-block;
+      width:18px;
+      height:18px;
+      vertical-align: middle;
+    }
+    .installment>dd>b{
+      display: inline-block;
+      padding-left:6px;
+      padding-right:8px;
+      height:14px;
+      line-height: 14px;
+      border-right:1px solid #DADADA;
+      vertical-align: middle;
+    }
+    .installment>dd:hover div{
+       display: block;
+    }
+    .installment>dd>div{
+       padding:6px 15px 0 15px;
+       border:1px solid #DADADA;
+       border-top-color:white;
+       width:194px;
+       position: absolute;
+       top:100%;
+       left:-1px;
+       background: white;
+       z-index: 1;
+       display: none;
+    }
+    .installment>dd>div>label{
+      line-height: 17px;
+      padding-top:8px;
+      display: block;
+      width:167px;
+      height:40px;
+      position: relative;
+      border-bottom: 1px solid #DADADA;
+      margin-left:25px;
+      margin-bottom:8px;
+      cursor:pointer;
+    }
+
+    .installment>dd>div>label:hover span{
+       color:red;
+    }
+
+    .installment>dd>div>label>input{
+      position: absolute;
+      top:15px;
+      left:-25px;
+    }
+    .installment>dd>div>label:last-child{
+      border:none;
+    }
+
+    .site-con{
+       display: none;
+       width:540px;
+       background: #FFFFFF;
+       border: 1px solid #DADADA;
+       top: 29px;
+       box-shadow: 0 0 4px 0 #e0e0e0;
+       position: absolute;
+       z-index: 5;
+    }
+    .site>dd:hover .site-con{
+       display: block;
+    }
+
+    .site-con>.top>button{
+      font-size: 12px;
+      color: #434242;
+      font-weight: bold;
+      float:left;
+      padding: 8px 14px;
+      background: #F6F6F6;
+      border: 1px solid #E0E0E0;
+      border-top: none;
+    }
+
+    .site-con>.top>.on{
+      border-color:white;
+      background: white;
+    }
+
+    .site-con>ul{
+      display: none;
+    }
+    .site-con>.on{
+      display: block;
+    }
+
+    .site-con>ul>li{
+    font-size: 12px;
+    line-height: 16px;
+    width: auto;
+    float: left;
+    padding: 0;
+    cursor: pointer;
+    margin: 10px 0 5px 20px;
+    width: 115px;
+   }
+   .site-con>ul>.on{
+    color:red;
+   }
+   .site-con>ul>li:hover{
+    color:red;
+   }
+
+   .buy_btn{
+    padding-top:15px;
+    margin-left:98px;
+   }
+
+   .buy_btn>button{
+    width: 130px;
+    height: 36px;
+    line-height: 36px;
+    color: #FFFFFF;
+    background-color: #E1140A;
+    text-align: center;
+    font-size: 15px;
+    margin-right: 10px;
+    cursor: pointer;
+    border: 1px solid #E1140A;
+   }
+
+   .buy_btn>.buy_car{
+    background-color: #FFEDED;
+    color: #E1140A;
+   }
+
+   .buy_btn>p{
+    margin-top:10px;
+    font-size: 12px;
+   }
+
+   .buy_btn>p>a{
+    color:#3E8DDD;
+    text-decoration:underline;
+   }
+
+   #main-T{
+    padding-bottom:40px;
+   }
+
+   .buy_num_hint{
+      width:170px;
+      height:48px;
+      line-height: 48px;
+      color:white;
+      position: fixed;
+      left:50%;
+      top:50%;
+      margin-left:-85px;
+      margin-top:-24px;
+      background: rgba(0,0,0,.5);
+      text-align:center;
+      display: none;
+      opacity: 0;
+   }
+
+
+</style>
+</head>
+<body class="clearfix">
+  <!-- 商标栏 -->
+  <div id="logo" class="clearfix">
+     <a id="logo-icon" href="#">
+        <img src="img/logo/lenovo-logo.jpg" alt="">
+     </a>
+     <div class="con-box">
+        <ul class="Left">
+           <li><a href="">联想首页</a></li>
+           <li><a href="">商城</a></li>
+           <li><a href="">企业购</a></li>
+           <li><a href="">服务</a></li>
+           <li><a href="">会员</a></li>
+           <li><a href="">社区</a></li>
+           <li><a href="">门店</a></li>
+           <li><a href="">品牌</a></li>
+           <li>下载app<img src="img/logo/APPma.png" alst=""></li>
+        </ul>
+        <div id="UE">
+           <a></a>
+           <div class="userinfo">
+              <a class="username" href="">
+                 <p>山深闻鹧鸪</p>
+                 <img src="img/logo/leve.png" alt="">
+                 <b></b>
+              </a>
+              <div class="erji">
+                 <div class="top">
+                    <img src="img/logo/erji-tx.png" alt="">
+                    <p>山深闻鹧鸪</p>
+                    <a class="quit">退出登录</a>
+                    <span>普卡会员<img src="img/logo/leve.png" alt=""></span>
+                 </div>
+                 <div class="mid">
+                    <a href="#"><b>600</b><p>乐豆</p></a>
+                    <a href="#"><b>28</b><p>优惠劵</p></a>
+                    <a href="#"><b>0</b><p>成长值</p></a>
+                 </div>
+                 <div class="btm">
+                    <a href="#">
+                       <img src="img/logo/erji-dd.png" alt="">
+                       <span>我的订单</span>
+                    </a>
+                    <a href="#">
+                       <img src="img/logo/erji-hy.png" alt="">
+                       <span>会员中心</span>
+                    </a>
+                    <a href="#">
+                       <img src="img/logo/erji-sq.png" alt="">
+                       <span>我的社区</span>
+                    </a>
+                    <a href="#">
+                       <img src="img/logo/erji-fw.png" alt="">
+                       <span>我的服务</span>
+                    </a>
+                 </div>
+              </div>
+              <a class="car" href="购物车.html" target="_black">
+                 <img src="img/logo/car.png" alt="">
+                 <span class="shp_num">0</span>
+              </a>
+           </div>
+           <div class="user">
+              <a href="#">注册</a>
+              <i></i>
+              <a id="register">登录</a>
+           </div>
+           <div class="phone">
+              <img src="img/logo/phone.png" alt="">
+              <div class="phone-erji">
+                 <img src="img/logo/phonema.png" alt="">
+                 <p>联想智选APP </p>
+                 <p class="red">下载即享<br>688元新人礼</p>
+              </div>
+           </div>
+        </div>   
+     </div>
+  </div>
+  <!-- 商标栏结束 -->
+  <!-- 导航栏 -->
+  <div id="nav" class="clearfix">
+     <div class="con-box clearfix">
+        <ul class="Left">
+           <li><a href="">新品</a></li>
+           <li><a href="">定制</a></li>
+           <li><a href="">合伙人</a></li>
+           <li><a href="">以旧换新</a></li>
+           <li><a href="">0元试用</a></li>
+           <li><a href="">乐豆购</a></li>
+           <li><a href="">学生</a></li>
+           <li><a href="">直播</a></li>
+           <li><a href="">企业购</a></li>
+           <li><a href="">0元购</a></li>
+        </ul>
+        <div class="Right">
+           <input type="text" placeholder="正当红一起来">
+           <a id="search"></a>
+        </div>
+     </div>
+     <div id="search-box" class="clearfix">
+        <input type="text"  placeholder="正当红一起来">
+        <a class="close" ><img src="img/close.png" alt=""></a>
+     </div>
+  </div>
+  <div id="pointto">
+     <div class="con"><p class="text fl"><a href="#">首页</a> > 商品详情 > </p><div class="gtcs">联系客服</div></div>
+  </div>
+  <!-- 导航栏结束 -->
+  <div id="main">
+     <div id="main-T" class="clearfix">
+        <div class="con-box clearfix">
+           <div class="details-L">
+
+              <div class="ISshow">
+                 <img>
+                 <div class="zz"></div>
+              </div>
+              
+              <div class="big"><img></div>
+              <div class="show clearfix">
+                 <a class="prev"><</a>
+                 <div class="con">
+                    <dl></dl>
+                 </div>
+                 <a class="next">></a>
+              </div>
+
+              <div class="good_action">
+                  <span class="serial_num">商品编号: </span>
+                  <dl>
+                     <dd><i></i>对比</dd>
+                     <dd><i></i>收藏</dd>
+                     <dd><i></i>分享有礼</dd>
+                  </dl>
+              </div>
+           </div>
+
+           <div class="details-R">
+              <h1 class="name"></h1>
+              <p class="carry"></p>
+              <div class="pricce-area">
+                 <div class="price">
+                    <span>会员价</span>
+                    <b><span>￥</span></b>
+                    <div class="evaluate_num">
+                       <p>累计评价</p>
+                       <a href="#"></a>
+                    </div>
+                 </div>
+                 <div class="activity clearfix">
+                       <span>活动</span>
+                       <ol></ol>
+                 </div>
+              </div>
+              <div class="serve clearfix">
+                 <div class="value-added">
+                    <span>增值业务</span>
+                    <p>支持  <span><img src="img/details/a66983ae-df77-4380-8d3c-6ff2d467465b.png" alt="">以旧换新</span> 高价回收，急速到账换新机</p>
+                 </div>
+                 <dl class="installment">
+                     <dt>分期付款</dt>
+                     <dd>
+                        <img src="img/details/e655fdc5-86aa-4b71-81bd-a03e5bab0be4.png" alt="">
+                        <b>花呗分期</b>
+                        <span>选择分期</span>
+                        <i></i>
+                        <div></div>
+                     </dd>
+                     <dd>
+                        <img src="img/details/76da00ca-136c-4d8d-9fb7-86db374a85d9.png" alt="">
+                        <b>白条分期</b>
+                        <span>选择分期</span>
+                        <i></i>
+                        <div></div>
+                     </dd>
+                     <dd>
+                        <img src="img/details/0yqlslgpwaimgsqjtxf06h3tbachf1758020.png" alt="">
+                        <b>银联分期</b>
+                        <span>使用银联分期</span>
+                     </dd>
+                 </dl>
+                 <dl class="site">
+                     <dt height="100%">配送至</dt>
+                     <dd>
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                        <i></i>
+                        <div class="site-con">
+                           <div class="top clearfix">
+                              <button class="on">请选择</button>
+                              <button>请选择</button>
+                              <button>请选择</button>
+                           </div>
+                           <ul class="clearfix on"></ul>
+                           <ul class="clearfix"></ul>
+                           <ul class="clearfix"></ul>
+                        </div>
+                     </dd>
+                 </dl>
+              </div>
+              <div class="buy_num">
+                    <span>购买数量</span>
+                    <div class="num">
+                        <button>+</button>
+                        <input type="text" value="1">
+                        <button>-</button>
+                        <div class="buy_num_hint">您最多只能购买5个</div>
+                    </div>
+              </div>
+              <div class="buy_btn">
+                 <button>立即购买</button>
+                 <button class="buy_car">加入购物车</button>
+                 <p>使用<a href="">联想智选APP</a>下单，享受更多优惠</p>
+              </div>
+           </div>
+        </div>
+     </div>
+     <div id="main-M">
+        <div class="con-box">
+
+        </div>
+     </div>
+     <div id="main-B">
+        <div class="con-box">
+           <div class="buy_title"></div>
+           
+        </div>
+     </div>
+  </div>
+  <!-- 详情图开始 -->
+  <div id="detail-img">
+     <div><img src="img/details/dly8ql9lclsgmgl2far5fgaal3026t682314.jpg" alt=""></div>
+     <div><img src="img/details/sxarrgz92agssruxc7mcl2ybwmqmrw928110.jpg" alt=""></div>
+  </div>
+  <!-- 详情图结束 -->
+  <!-- 页脚 -->
+  <div id="footer" class="clearfix">
+     <div class="detail-img"><img src="img/details/pcmianzeshengming.jpg" alt=""></div>
+     <div class="Top"><img src="img/footer/top.png" alt=""></div>
+     <div class="Middle">
+        <ul>
+        </ul>
+        <div class="Right">
+           <h3>400-990-8888转4</h3>
+           <span>周一到周日 9:00-21:00</span>
+           <a href="#"></a>
+        </div>
+     </div>
+     <div class="Bottom">
+        <div class="con-box">
+           <div class="Left">
+              版权所有：1998-2021 联想集团
+              <span>|</span>
+              <a href="#">法律公告</a>
+              <span>|</span>
+              <a href="#">隐私权政策</a>
+              <span>|</span>
+              <a href="#">产品安全</a>
+           </div>
+           <div class="Right">
+              <a href="#">京ICP备11035381-2</a> 
+              <span>|</span>
+              京公网安备110108007970号 
+              <span>|</span>
+              <a href="#">营业执照:91110108700000458B</a>
+           </div>
+        </div>
+     </div>
+  </div>
+  <!-- 页脚结束 -->
+  <!-- 侧边栏 -->
+  <div class="sidebar">
+     <dl>
+        <dd>
+           <a href="#">
+              <img src="img/sidebar/rx1.png" alt="">
+              <img class="hover" src="img/sidebar/rx2.png" alt="">
+           </a>
+           <a class="erji" href="#">
+              <img src="img/sidebar/rx-erji1.png" alt="">
+              <img class="hover" src="img/sidebar/rx-erji2.png" alt="">
+           </a>
+        </dd>
+        <dd>
+           <a href="#">
+              <img src="img/sidebar/zx1.png" alt="">
+              <img class="hover" src="img/sidebar/zx2.png" alt="">
+           </a>
+           <a class="erji" href="#">
+              <img src="img/sidebar/zx-erji1.png" alt="">
+              <img class="hover" src="img/sidebar/zx-erji2.png" alt="">
+           </a>
+        </dd>
+        <dd>
+           <a href="#">
+              <img src="img/sidebar/md1.png" alt="">
+              <img class="hover" src="img/sidebar/md2.png" alt="">
+           </a>
+        </dd>
+        <dd>
+           <a href="#">
+              <img src="img/sidebar/tc1.png" alt="">
+              <img class="hover" src="img/sidebar/tc2.png" alt="">
+           </a>
+        </dd>
+        <dd>
+           <a href="#">
+              <img src="img/sidebar/APP1.png" alt="">
+              <img class="hover" src="img/sidebar/APP2.png" alt="">
+           </a>
+           <a class="erji" href="#">
+              <img class="hover" src="img/sidebar/APP-erji.png" alt="">
+           </a>
+        </dd>
+        <dd>
+           <a href="#">
+              <img src="img/sidebar/fl1.jpg" alt="">
+              <img class="hover" src="img/sidebar/fl2.jpg" alt="">
+           </a>
+           <a class="erji" href="#">
+              <img class="hover" src="img/sidebar/fl-erji.jpg" alt="">
+           </a>
+        </dd>
+        <dd>
+           <a id="toTop">
+              <img src="img/sidebar/db1.png" alt="">
+              <img class="hover" src="img/sidebar/db2.png" alt="">
+           </a>
+        </dd>
+     </dl>
+  </div>
+  <!-- 侧边栏结束 -->
+  <!-- 登录界面 -->
+  <div id="login">
+     <div class="con-box clearfix">
+       <a class="close"></a>
+       <div id="Tologin">
+          <div class="switch">
+             <p><img src="img/login/icon-prevent.png" alt="">扫码登录更安全</p>
+          </div>
+          <p>联想会员登录</p>
+          <div class="Tel">
+             <div>
+                <input class="lock" type="text" placeholder="输入手机号码" /><b></b>
+             </div>
+             <div class="verify clearfix">
+                <input class="key" type="text" placeholder="短信验证码"/>
+                <a href="#">获取验证码</a>
+             </div>
+             <p class="mistake clearfix"><img src="img/login/err.png" alt=""><span></span></p>
+          </div>
+          <div class="mail">
+             <div>
+                <input class="lock" type="text" placeholder="邮箱/手机号码"/><b></b>
+             </div>
+             <div><input class="key" type="password" placeholder="密码"/></div>
+             <p class="mistake clearfix">
+                <img src="img/login/err.png" alt=""><span></span>
+             </p>
+          </div>
+          <div class="login-btn">
+            <p><input id="auto-login" type="checkbox"><label for="auto-login"> 自动登录</label></p>
+            <button>登录</button>
+          </div>
+          <a class="cut">用户名密码登录</a>
+          <div class="method">
+             <p>————————其他登录方式————————</p>
+             <div class="ico clearfix">
+                <a href="#"></a>
+                <a href="#"></a>
+                <a href="#"></a>
+                <a href="#"></a>
+             </div>
+          </div>
+       </div>
+       <div id="Ewm"> 
+          <div class="switch">
+          </div>
+          <p>联想会员扫码登录</p>
+          <span>打开<span>微信</span>扫码登录</span>
+          <div class="ewm-box">
+             <div class="refresh">
+                <h6>二维码已失效</h6>
+                <a>刷新</a>
+             </div>
+             <img src="img/login/show.gif" alt="">
+          </div>
+       </div>
+     </div>
+  </div>
+  <!-- 登录界面结束 -->
+</body>
+ <script src="js/模板.js"></script>
+ <script src="js/move.js"></script>
+ <script src="js/footer.js"></script>
+ <script src="js/login.js"></script>
+ <script src="js/data.js"></script>
+ <script src="js/onscroll.js"></script>
+ <script type="text/javascript">
+  var shp=document.cookie.split(";")
+  $('.shp_num').innerText=shp[0]!=""?shp.length:0
+  var user=document.querySelector("#UE .user")
+      var userinfo=document.querySelector("#UE .userinfo")
+      user.style.display="none"
+      userinfo.style.display="block"
+ </script>
+</html>

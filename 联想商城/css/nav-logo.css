@@ -1,0 +1,411 @@
+
+
+.red{
+	color:#f10315;
+}
+
+#logo,#nav,#banner{
+	position: relative;
+	width:100%;
+}
+#logo{
+	background: white;
+}
+/*商标栏*/
+#logo-icon{
+	position: absolute;
+	top:0;
+	left:0;
+}
+
+#logo>.con-box{
+	height:50px;
+}
+/*商标栏 左部分*/
+.con-box>.Left{
+	float:left;
+}
+.con-box>.Left>li{
+	float:left;
+}
+
+#logo>.con-box>.Left>li{
+	color:#E1140A;
+   position: relative;
+   
+   font-size:15px;
+   margin-right:22px;
+   line-height: 50px;
+}
+#logo>.con-box>.Left>li>a{
+	color:#8d8d8d;
+}
+#logo>.con-box>.Left>li>img{
+	display: none;
+	position: absolute;
+	top:43px;
+	left:-32px;
+	z-index: 1;
+	width:233px;
+	height:124px;
+}
+
+#logo>.con-box>.Left>li:hover img{
+    display: block;
+}
+
+/*商标栏 右部分*/
+#UE{
+	position: absolute;
+	right:0;
+	top:0;
+	height:100%;
+}
+#UE .phone{
+	position: relative;
+	margin:0 8px 0 20px;
+    float:right;
+	height:50px;
+}
+#UE .phone>img{
+   margin:14px 0;
+}
+
+#UE .phone-erji{
+	background: white;
+	display: none;
+	position: absolute;
+	top:50px;
+	left:-80px;
+	z-index: 1;
+	padding:12px 0 0 12px;
+	width:186px;
+	height:92px;
+}
+
+#UE .phone:hover .phone-erji{
+    display: block;
+}
+
+#UE .phone-erji>img{
+	float:left;
+	width:80px;
+	height:80px;
+}
+
+#UE .phone-erji>p{
+	margin-top:10px;
+	margin-left:12px;
+	line-height:16px;
+	float:left;
+	font-size:12px;
+}
+
+#UE .user{
+	cursor:pointer;
+	float:left;
+	font-size: 12px;
+	line-height: 50px;
+}
+
+#UE .user>i{
+	display: inline-block;
+	margin:0 2px;
+	width:1px;
+	height:12px;
+	background: #ccc;
+}
+
+#UE .userinfo{
+	display: none;
+	float:left;
+}
+
+
+#UE .userinfo>a{
+   display: block;
+   float:left;
+}
+
+#UE .userinfo>.username{
+	position: relative;
+}
+
+#UE .userinfo>.username>p{
+	float:left;
+   width:80px;
+   line-height: 50px;
+   font-size: 12px;
+}
+
+#UE .userinfo>.username>img{
+	margin-top:15px;
+	width:20px;
+	height:20px;
+	float:left;
+}
+
+#UE .userinfo>.username>b{
+    position:absolute;
+    display: none;
+    width:100%;
+    height:2px;
+    background: black;
+    bottom:0;
+}
+
+#UE .userinfo:hover .username>b{
+	display: block;
+}
+
+
+#UE .userinfo>.car{
+	position: relative;
+}
+
+#UE .userinfo>.car>img{
+	display: inline-block;
+	width:20px;
+	height:20px;
+	margin-left:20px;
+	margin-top:16px;
+}
+
+#UE .userinfo>.car>span{
+	display: inline-block;
+    background: red;
+    width: 20px;
+    height: 20px;
+    position: absolute;
+    top: 2px;
+    left: 40px;
+    border-radius: 50% 50% 50% 0%;
+    line-height: 20px;
+    text-align: center;
+    font-size: 12px;
+    color: #fff;
+}
+
+.userinfo>.erji{
+	transition: 0.2s;
+	overflow: hidden;
+	position: absolute;
+    height: 0;
+    left: -218px;
+    top: 50px;
+    border-radius: 10px;
+	width:425px;
+	
+	background:url("../img/logo/erji-bg.png");
+	z-index: 999;
+}
+
+.userinfo:hover .erji{
+	height:333px;
+}
+
+
+.userinfo>.erji>div{
+	float:left;
+}
+
+.userinfo>.erji>.top{
+	color:#ad8953;
+}
+
+.userinfo>.erji>.top>img{
+   width: 60px;
+    height: 60px;
+    float: left;
+    margin: 26px 18px 0 38px;
+    border-radius: 50%;
+}
+
+.userinfo>.erji>.top>p{
+	float:left;
+	margin-top:26px;
+	font-size: 20px;
+	line-height: 26px;
+}
+
+.userinfo>.erji>.top>a{
+	cursor:pointer;
+	float: right;
+    font-size: 14px;
+    color: #828282;
+    border-bottom: 1px solid #828282;
+    line-height: 20px;
+    margin-right: 45px;
+    margin-top: 32px;
+}
+
+.userinfo>.erji>.top>span{
+	margin-top:10px;
+	width:50%;
+	float:left;
+	font-size:14px;
+}
+
+.userinfo>.erji>.top>span>img{
+	vertical-align: middle;
+	display: inline-block;
+	width:20px;
+	height:20px;
+}
+
+.userinfo>.erji>.mid{
+    margin-top: 44px;
+    margin-left: 23px;
+}
+
+.userinfo>.erji>.mid>a{
+	width: 94px;
+    text-align: center;
+    line-height: 25px;
+    color: #fff;
+    font-size: 16px;
+}
+
+.userinfo>.erji>.mid>a>b{
+	font-size: 20px;
+}
+
+
+
+.userinfo>.erji>.mid>a{
+	float:left;
+}
+
+.userinfo>.erji>.btm{
+	margin-top: 25px;
+	margin-left: 40px;
+	width: 425px;
+    height: 130px;
+}
+
+.userinfo>.erji>.btm>a{
+	margin-right: 32px;
+    line-height: 40px;
+	float:left;
+	color: #767676;
+}
+
+.userinfo>.erji>.btm>a>img{
+	margin-top:15px;
+	width: 58px;
+    height: 58px;
+    display: block;
+
+}
+
+    
+
+    
+/*商标栏结束*/
+
+
+
+
+
+
+
+/*导航栏*/
+#nav{
+	transition: 0.2s;
+	position: relative;
+	background: #e0e0e0;
+}
+
+#search-box{
+	display: none;
+	height:50px;
+	position: absolute;
+	margin:0 auto;
+	width:1200px;
+	background: #e0e0e0;
+	left:50%;
+	margin-left:-600px;
+}
+
+#search-box>input{
+	line-height: 50px;
+   position: absolute;
+   left:50%;
+   width:600px;
+   height:36px;
+   padding: 0 30px;
+   margin:7px;
+    margin-left:-323px;
+    border:none;
+}
+
+#search-box>.close{
+	position: absolute;
+	width:18px;
+	height:18px;
+	top:16px;
+	right:270px;
+}
+
+#search-box>.close>img{
+	width:18px;
+	height:18px;
+}
+/*导航栏 左部分*/
+
+#nav>.con-box>.Left{
+	line-height: 70px;
+}
+#nav>.con-box>.Left>li{
+	margin-right:45px;
+	font-size:17px;
+	font-weight: bold;
+
+}
+/*导航栏 右部分*/
+#nav>.con-box>.Right{
+	position: relative;
+	float:right;
+	margin:17px 10px 17px 0;
+	width: 270px;
+    height: 36px;
+    background-color: #eaeaea;
+    border-radius: 30px;
+}
+
+.con-box>.Right>input{
+	font-size:12px;
+	line-height: 36px;
+	background: #eaeaea;
+	margin-left:17px;
+	border:none;
+	height:100%;
+	width:220px;
+}
+
+#search,.search{
+	position: absolute;
+	margin:15px;
+	width: 20px;
+    height: 20px;
+    right:110px;
+    background-image: url("../img/nav/search.png");
+    background-repeat: no-repeat;
+    background-size: 20px;
+    display: inline-block;
+}
+
+
+#nav>.con-box>.Right>#search{
+	margin:0;
+    top: 8px;
+    right:18px;
+    
+}
+/*导航栏结束*/
+
+
+
+
+
+

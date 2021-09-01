@@ -1,0 +1,350 @@
+#login{
+	position: fixed;
+	top:0;
+	left:0;
+	width:100%;
+	height:100%;
+	background:rgba(0,0,0,0.2);
+	z-index: 98;
+    display: none;
+}
+#login>.con-box{
+    width:580px;
+    height:500px;
+    position: absolute;
+    left: 50%;
+    top: 90px;
+    margin-left: -290px;
+    z-index: 10000100;
+}
+
+#login>.con-box>.close{
+    cursor:pointer;
+    position: absolute;
+    right: -66px;
+    top: -28px;
+    z-index: 111111;
+    width: 50px;
+    height: 50px;
+    background: url(../img/login/icon-close.png) center no-repeat;
+}
+#Tologin{
+	position: absolute;
+    width: 330px;
+    height: auto;
+    padding: 0 125px;
+    background: #fff;
+}
+
+#Tologin>.switch{
+    cursor:pointer;
+    position: absolute;
+    right: 5px;
+    top: 5px;
+   width:80px;
+   height:80px;
+   color: #6b6964;
+   font-size: 12px;
+   font-weight: 400;
+   background: url("../img/login/qrcode.png");
+   
+}
+
+
+#Tologin>.switch>p{
+    display: block;
+    border: 2px solid #f3d995;
+    height: 16px;
+    line-height: 16px;
+    padding: 5px 20px 5px 15px;
+    background: #fefcee;
+    position: absolute;
+    top:5px;
+    left:-143px;
+
+}
+
+#Tologin>.switch>p>img{
+  width:14px;
+  height:14px;
+  margin-right:6px;
+  display: inline-block;
+  vertical-align: middle;
+}
+
+
+
+#Tologin>p,#Ewm>p{
+	margin-top: 60px;
+    font-size: 30px;
+    text-align: center;
+    line-height: 30px;
+}
+
+.lock,.key{
+	line-height: 44px;
+	height: 44px;
+	font-size: 14px;
+	border: 1px solid #d6d6d6;
+}
+
+#Tologin .lock{
+	margin-top:38px;
+	margin-bottom:14px;
+    width: 258px;
+    padding-left: 20px;
+    padding-right: 50px;
+    
+}
+
+#Tologin .key{
+	width: 147px;
+    padding-left: 20px;
+    padding-right: 50px;
+}
+
+#Tologin .on{border-color:#424242;}
+#Tologin .red{border-color:red;}
+
+#Tologin .verify>a{
+    float: left;
+    width: 110px;
+    text-align: center;
+    background-color: #f7f7f7;
+    color: #3680c1;
+    border: 1px solid #d6d6d6;
+    height: 44px;
+    line-height: 44px;
+    border-left: 0;
+    font-size: 14px;
+}
+
+#Tologin .verify>.key{
+    float:left;
+}
+
+#Tologin>.mail{
+    display: none;
+}
+
+#Tologin>.mail .key{
+    width: 258px;
+}
+
+#Tologin>.login-btn>button{
+    cursor:pointer;
+	border:none;
+    height: 50px;
+    line-height: 50px;
+    width: 330px;
+    background-color: #e22319;
+    color: #fff;
+    font-size: 14px;
+}
+
+#Tologin>.login-btn>p{
+	margin:16px 0;
+	display: block;
+    line-height: 14px;
+    color: #000;
+    font-size: 14px;
+    width: 90px;
+    cursor: pointer;
+}
+
+#Tologin>.cut{
+   color:#ef1c22;
+   font-size: 14px;
+   line-height: 14px;
+   display: block;
+   margin-top:16px;
+   margin-bottom:40px;
+   cursor:pointer;
+}
+
+#Tologin>.method{
+
+}
+
+#Tologin>.method>p{
+	text-align: center;
+    font-size: 14px;
+    color: #8c8c8c;
+    line-height: 14px;
+    height: 14px;
+    margin-bottom:15px;
+}
+
+#Tologin>.method>.ico{
+	padding:0 60px;
+}
+.ico>a{
+	width:31px;
+	height:31px;
+    float: left;
+    margin-left: 28px;
+    margin-bottom:30px;
+}
+
+.ico>a:nth-child(1){
+	margin-left: 0;
+    background:url("../img/login/qq1.png");
+}
+
+.ico>a:nth-child(2){
+    background:url("../img//login/weibo1.png");
+}
+
+.ico>a:nth-child(3){
+    background:url("../img//login/weixin1.png");
+}
+
+.ico>a:nth-child(4){
+    background:url("../img//login/zhifubao1.png");
+}
+
+.ico>a:nth-child(1):hover{
+	background:url("../img//login/qq2.png");
+}
+
+.ico>a:nth-child(2):hover{
+	background:url("../img//login/weibo2.png");
+}
+
+.ico>a:nth-child(3):hover{
+	background:url("../img//login/weixin2.png");
+}
+
+.ico>a:nth-child(4):hover{
+	background:url("../img//login/zhifubao2.png");
+}
+
+#Ewm{
+    display: none;
+    position: absolute;
+    width: 330px;
+    height: auto;
+    padding: 0 125px;
+    z-index: 10000100;
+    background: #fff;
+    text-align: center;
+    background:white;
+}
+
+
+#Ewm>span{
+    display: block;
+    margin-top:23px;
+    margin-bottom:30px;
+}
+
+#Ewm>span>span{
+    padding: 0 5px;
+    font-weight: 700;
+    color: #424242;
+}
+
+#Ewm>.switch{
+    cursor:pointer;
+    position: absolute;
+    top:5px;
+    right:5px;
+    width:63px;
+    height:59px;
+    background: url("../img/login/pc.png") no-repeat;
+    background-size:100%;
+}
+
+#Ewm>.ewm-box{
+    position: relative;
+    margin:30px 40px;
+    margin-bottom:43px;
+}
+
+#Ewm>.ewm-box>img{
+    width:250px;
+    height:250px;
+}
+
+#Ewm>.ewm-box>img{
+    margin:0 auto;
+}
+
+#Ewm>.ewm-box>.refresh{
+    display: none;
+    width:250px;
+    height:250px;
+    position: absolute;
+    top:0;
+    left:0;
+    background: rgba(255,255,255,.8);
+    
+}
+
+#Ewm>.ewm-box>.refresh>h6{
+    color: #3c3c3c;
+    margin-top: 80px;
+    margin-bottom: 8px;
+    text-align: center;
+    font-size: 14px;
+}
+
+#Ewm>.ewm-box>.refresh>a{
+    cursor:pointer;
+    width: 100px;
+    height: 36px;
+    line-height: 36px;
+    text-align: center;
+    margin: 0 auto;
+    background: #ff0036;
+    display: block;
+    color: #fff;
+    border-radius: 3px;
+    font-size: 14px;
+}
+
+
+.mistake{
+    display: none;
+    margin-top:14px;
+    line-height: 25px;
+    font-size: 12px;
+    color:red;
+}
+
+.mistake>img{
+    margin-top:4px;
+    float:left;
+    display: inline-block;
+}
+
+.mistake>span{
+    float:left;
+    margin-left:8px;
+}
+
+.Tel>div,.mail>div{
+    position: relative;
+}
+
+.Tel>div>b,.mail>div>b{
+    display: none;
+    position: absolute;
+    right:14px;
+    bottom:27px;
+    width:16px;
+    height:16px;
+    background: url("../img/login/icon-delete.png");
+}
+
+.Tel>div>.del,.mail>div>.del{
+    background: url("../img/login/icon-err-delete.png");
+}
+
+
+
+
+
+    
+
+    

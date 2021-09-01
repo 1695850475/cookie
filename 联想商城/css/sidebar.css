@@ -1,0 +1,84 @@
+.sidebar{
+	display: none;
+	width: 50px;
+    height: auto;
+    z-index: 20;
+    position: fixed;
+    right: 16px;
+    top: 150px;
+}
+
+.sidebar>dl>dd{
+	position: relative;
+}
+
+.sidebar>dl>dd{
+	width:50px;
+	height:60px;
+}
+
+.sidebar>dl>dd:first-child{
+	height:67px;
+}
+
+.sidebar>dl>dd:last-child{
+	height:24px;
+}
+
+.sidebar>dl>dd:nth-child(5){
+	height:77px;
+}
+
+.sidebar>dl>dd:nth-child(6){
+	height:82px;
+}
+
+.sidebar>dl>dd>a:first-child{
+	width: 100%;
+	height:100%;
+}
+
+.sidebar>dl>dd>a:first-child img{
+	width:100%;
+	height:100%;
+}
+
+.sidebar>dl>dd>.erji{
+    position: absolute;
+    padding-right: 10px;
+    top: 0;
+    right: 40px;
+	display: none;
+}
+
+.sidebar>dl>dd>.erji:hover img{
+   display: none;
+}
+
+.sidebar>dl>dd>.erji:hover .hover{
+   display: block;
+}
+
+.sidebar>dl>dd>a>.hover{
+   display: none;
+}
+
+.sidebar>dl>dd:hover a:first-child img{
+	display: none;
+}
+.sidebar>dl>dd:hover a:first-child .hover{
+	display: block;
+}
+
+.sidebar>dl>dd:hover .erji{
+    display: block;
+}
+
+.sidebar>dl>dd:nth-child(5):hover .erji>img{
+	display: block;
+}
+
+.sidebar>dl>dd:nth-child(6):hover .erji>img{
+	display: block;
+}
+
